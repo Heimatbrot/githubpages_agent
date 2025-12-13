@@ -11,3 +11,6 @@ permissions:
 limits:
   max_steps: 100
   max_runtime_seconds: 1800
+
+tasks:
+  - file: task.txt
