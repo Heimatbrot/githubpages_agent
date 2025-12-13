@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Pages Agent - Welcome</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+            font-weight: 300;
+        }
+
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .feature {
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .feature h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature p {
+            color: #6c757d;
+        }
+
+        .cta {
+            margin-top: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .btn:hover {
+            background: #5a6fd8;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .footer {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e9ecef;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 1rem;
+                padding: 1.5rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 GitHub Pages Agent</h1>
+        <p class="subtitle">Automated deployment made simple</p>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>🔄 Automatic Deployment</h3>
+                <p>Every push to main branch automatically deploys your site using GitHub Actions</p>
+            </div>
+            <div class="feature">
+                <h3>⚡ Fast & Reliable</h3>
+                <p>Built with modern web standards and optimized for performance</p>
+            </div>
+            <div class="feature">
+                <h3>📱 Responsive Design</h3>
+                <p>Looks great on desktop, tablet, and mobile devices</p>
+            </div>
+        </div>
+
+        <div class="cta">
+            <a href="https://github.com/Heimatbrot/githubpages_agent" class="btn">View on GitHub</a>
+        </div>
+
+        <div class="footer">
+            <p>Deployed with ❤️ using GitHub Pages</p>
+            <p>Last updated: <span id="lastUpdated"></span></p>
+        </div>
+    </div>
+
+    <script>
+        // Display current date as last updated
+        document.getElementById('lastUpdated').textContent = new Date().toLocaleDateString();
+    </script>
+</body>
+</html>
