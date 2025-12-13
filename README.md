@@ -1,72 +1,146 @@
-# Die Linoso Games
+# Next.js Application
 
-A React-based recreation of the Linoso Games website, originally hosted at linosogames.weebly.com.
-
-## About
-
-This website showcases the Linoso Games, a series of children's birthday party games first held in October 2022. The games are designed for children and teenagers, providing an entertaining way to celebrate birthdays and other festivities.
+A modern, fast, and scalable web application built with Next.js, React, and Tailwind CSS.
 
 ## Features
 
-- **Responsive Design**: Works on desktop, tablet, and mobile devices
-- **Original Content**: All German text content from the original website
-- **Animated Graphics**: Includes the original animated GIF from the source site
-- **Clean Styling**: Modern, readable design with proper typography
-- **Static Deployment**: Built for GitHub Pages deployment
+- ⚡ **Fast Performance** - Built with Next.js for optimal performance and SEO optimization
+- 🎨 **Modern Design** - Beautiful, responsive design with Tailwind CSS
+- 🔒 **Type Safe** - Built with TypeScript for better development experience
+- 📱 **Responsive** - Mobile-first design that works on all devices
+- 🚀 **Static Export** - Configured for static site generation and GitHub Pages deployment
 
-## Technology Stack
+## Tech Stack
 
-- **React 18**: Modern React with functional components
-- **Vite**: Fast build tool and development server
-- **CSS3**: Custom styling with responsive design
-- **GitHub Pages**: Static site hosting
+- **Framework**: Next.js 16
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS 4
+- **UI Library**: React 19
+- **Development**: ESLint, Hot Reload
+- **Deployment**: GitHub Pages
 
-## Development
+## Getting Started
 
 ### Prerequisites
 
-- Node.js 18 or higher
-- npm
+- Node.js 20 or later
+- npm or yarn
 
 ### Installation
 
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd githubpages_agent
+```
+
+2. Install dependencies:
 ```bash
 npm install
 ```
 
-### Development Server
-
+3. Run the development server:
 ```bash
 npm run dev
 ```
 
-The site will be available at `http://localhost:12000/githubpages_agent/`
+4. Open [http://localhost:12000](http://localhost:12000) in your browser.
 
-### Build for Production
+## Available Scripts
 
+- `npm run dev` - Start the development server
+- `npm run build` - Build the application for production
+- `npm run start` - Start the production server
+- `npm run lint` - Run ESLint for code quality
+
+## Project Structure
+
+```
+src/
+├── app/                    # App Router pages
+│   ├── about/             # About page
+│   ├── contact/           # Contact page
+│   ├── globals.css        # Global styles
+│   ├── layout.tsx         # Root layout
+│   └── page.tsx           # Home page
+├── components/            # Reusable components
+│   └── Navigation.tsx     # Navigation component
+public/                    # Static assets
+.github/
+└── workflows/
+    └── deploy.yml         # GitHub Actions deployment
+```
+
+## Pages
+
+- **Home** (`/`) - Landing page with features overview
+- **About** (`/about`) - Information about the application and tech stack
+- **Contact** (`/contact`) - Contact form with validation
+
+## Deployment
+
+This application is configured for automatic deployment to GitHub Pages using GitHub Actions.
+
+### Manual Deployment
+
+1. Build the application:
 ```bash
 npm run build
 ```
 
-### Preview Production Build
+2. The static files will be generated in the `out` directory.
 
-```bash
-npm run preview
+### GitHub Pages Deployment
+
+The application automatically deploys to GitHub Pages when you push to the main branch. The deployment workflow:
+
+1. Installs dependencies
+2. Builds the Next.js application
+3. Exports static files
+4. Deploys to GitHub Pages
+
+## Configuration
+
+### Next.js Configuration
+
+The application is configured for static export in `next.config.ts`:
+
+```typescript
+const nextConfig: NextConfig = {
+  output: 'export',
+  trailingSlash: true,
+  images: {
+    unoptimized: true
+  }
+};
 ```
 
-## Deployment
+### Tailwind CSS
 
-The site is automatically deployed to GitHub Pages when changes are pushed to the main branch. The deployment is handled by GitHub Actions workflow defined in `.github/workflows/deploy.yml`.
+Tailwind CSS is configured with the latest version (v4) for modern styling capabilities.
 
-## Content Sections
+## Development
 
-1. **Die ersten Spiele** - Information about the first games held in October 2022
-2. **Die Gewinner der ersten Ausgabe** - Details about the winners (Sean, Jana, and Valerio)
-3. **Die Spiele** - List of games played including Löffeleier, Dart, Sackhüpfen, etc.
-4. **Die Grundidee** - The core concept and educational value
-5. **Teilnahme** - Information about participation (invitation-only)
-6. **Unser Ziel** - Future goals including potential stadium events and TV broadcasts
+### Adding New Pages
+
+1. Create a new directory in `src/app/`
+2. Add a `page.tsx` file with your component
+3. The page will be automatically available at the route
+
+### Adding Components
+
+1. Create new components in `src/components/`
+2. Export them for use in pages
+3. Follow TypeScript best practices
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
 
 ## License
 
-This project recreates content from the original Linoso Games website for educational and demonstration purposes.
+This project is open source and available under the [MIT License](LICENSE).
