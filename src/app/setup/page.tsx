@@ -2,27 +2,27 @@ import Link from "next/link";
 
 export default function Setup() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-green-50">
       <main className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
           <div className="mb-8">
-            <Link href="/" className="text-blue-600 hover:text-blue-800 flex items-center gap-2 mb-4">
+            <Link href="/" className="text-green-600 hover:text-green-800 flex items-center gap-2 mb-4">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
               Back to Home
             </Link>
-            <h1 className="text-4xl font-bold text-gray-900 mb-6">OpenHands Setup Guide</h1>
-            <p className="text-xl text-gray-600">
+            <h1 className="text-4xl font-bold text-green-900 mb-6">OpenHands Setup Guide</h1>
+            <p className="text-xl text-green-700">
               Learn how to set up OpenHands for automated GitHub issue processing, coding, testing, and deployment.
             </p>
           </div>
 
           {/* Prerequisites */}
-          <div className="bg-white rounded-lg shadow-md p-8 mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Prerequisites</h2>
-            <ul className="space-y-2 text-gray-600">
+          <div className="bg-white rounded-lg shadow-md p-8 mb-8 border border-green-100">
+            <h2 className="text-2xl font-semibold text-green-900 mb-4">Prerequisites</h2>
+            <ul className="space-y-2 text-green-700">
               <li className="flex items-start gap-2">
                 <span className="text-green-600 mt-1">✓</span>
                 Python 3.8 or higher installed
@@ -47,9 +47,9 @@ export default function Setup() {
           </div>
 
           {/* Step 1: Install OpenHands */}
-          <div className="bg-white rounded-lg shadow-md p-8 mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Step 1: Install OpenHands</h2>
-            <p className="text-gray-600 mb-4">
+          <div className="bg-white rounded-lg shadow-md p-8 mb-8 border border-green-100">
+            <h2 className="text-2xl font-semibold text-green-900 mb-4">Step 1: Install OpenHands</h2>
+            <p className="text-green-700 mb-4">
               Install OpenHands using pip or from source:
             </p>
             
@@ -64,22 +64,22 @@ export default function Setup() {
               </code>
             </div>
 
-            <p className="text-gray-600">
+            <p className="text-green-700">
               Alternatively, you can use the web interface at{" "}
-              <a href="https://app.all-hands.dev" className="text-blue-600 hover:text-blue-800 underline">
+              <a href="https://app.all-hands.dev" className="text-green-600 hover:text-green-800 underline">
                 app.all-hands.dev
               </a>
             </p>
           </div>
 
           {/* Step 2: API Keys */}
-          <div className="bg-white rounded-lg shadow-md p-8 mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Step 2: Set Up API Keys</h2>
+          <div className="bg-white rounded-lg shadow-md p-8 mb-8 border border-green-100">
+            <h2 className="text-2xl font-semibold text-green-900 mb-4">Step 2: Set Up API Keys</h2>
             
             <div className="mb-6">
-              <h3 className="text-lg font-medium text-gray-900 mb-3">OpenAI API Key</h3>
-              <ol className="list-decimal list-inside space-y-2 text-gray-600 mb-4">
-                <li>Go to <a href="https://platform.openai.com/api-keys" className="text-blue-600 hover:text-blue-800 underline">OpenAI API Keys</a></li>
+              <h3 className="text-lg font-medium text-green-900 mb-3">OpenAI API Key</h3>
+              <ol className="list-decimal list-inside space-y-2 text-green-700 mb-4">
+                <li>Go to <a href="https://platform.openai.com/api-keys" className="text-green-600 hover:text-green-800 underline">OpenAI API Keys</a></li>
                 <li>Click "Create new secret key"</li>
                 <li>Give it a descriptive name like "OpenHands-Automation"</li>
                 <li>Copy the generated key (starts with sk-)</li>
@@ -95,9 +95,9 @@ export default function Setup() {
             </div>
 
             <div className="mb-6">
-              <h3 className="text-lg font-medium text-gray-900 mb-3">GitHub Personal Access Token</h3>
-              <ol className="list-decimal list-inside space-y-2 text-gray-600 mb-4">
-                <li>Go to <a href="https://github.com/settings/tokens" className="text-blue-600 hover:text-blue-800 underline">GitHub Settings → Developer settings → Personal access tokens</a></li>
+              <h3 className="text-lg font-medium text-green-900 mb-3">GitHub Personal Access Token</h3>
+              <ol className="list-decimal list-inside space-y-2 text-green-700 mb-4">
+                <li>Go to <a href="https://github.com/settings/tokens" className="text-green-600 hover:text-green-800 underline">GitHub Settings → Developer settings → Personal access tokens</a></li>
                 <li>Click "Generate new token" → "Generate new token (classic)"</li>
                 <li>Give it a descriptive name like "OpenHands-Automation"</li>
                 <li>Select scopes: <code className="bg-gray-100 px-1 rounded">repo</code>, <code className="bg-gray-100 px-1 rounded">workflow</code>, <code className="bg-gray-100 px-1 rounded">write:packages</code></li>
@@ -126,9 +126,9 @@ export default function Setup() {
           </div>
 
           {/* Step 3: Automation Script */}
-          <div className="bg-white rounded-lg shadow-md p-8 mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Step 3: Create Automation Script</h2>
-            <p className="text-gray-600 mb-4">
+          <div className="bg-white rounded-lg shadow-md p-8 mb-8 border border-green-100">
+            <h2 className="text-2xl font-semibold text-green-900 mb-4">Step 3: Create Automation Script</h2>
+            <p className="text-green-700 mb-4">
               Create a Python script that automatically processes GitHub issues:
             </p>
 
@@ -350,12 +350,12 @@ if __name__ == "__main__":
               </code>
             </div>
 
-            <p className="text-gray-600 mb-4">Save this as <code className="bg-gray-100 px-1 rounded">github_automation.py</code> and customize the repository settings.</p>
+            <p className="text-green-700 mb-4">Save this as <code className="bg-gray-100 px-1 rounded">github_automation.py</code> and customize the repository settings.</p>
           </div>
 
           {/* Step 4: Running the Script */}
-          <div className="bg-white rounded-lg shadow-md p-8 mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Step 4: Run the Automation</h2>
+          <div className="bg-white rounded-lg shadow-md p-8 mb-8 border border-green-100">
+            <h2 className="text-2xl font-semibold text-green-900 mb-4">Step 4: Run the Automation</h2>
             
             <div className="bg-gray-900 rounded-lg p-4 mb-4">
               <code className="text-green-400 text-sm">
@@ -370,7 +370,7 @@ if __name__ == "__main__":
 
             <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
               <h4 className="font-medium text-blue-900 mb-2">How it works:</h4>
-              <ol className="list-decimal list-inside space-y-1 text-blue-800 text-sm">
+              <ol className="list-decimal list-inside space-y-1 text-green-800 text-sm">
                 <li>Script checks for open GitHub issues</li>
                 <li>For each issue, it calls OpenHands with the issue details</li>
                 <li>OpenHands analyzes, codes, and tests the solution</li>
@@ -383,29 +383,29 @@ if __name__ == "__main__":
           </div>
 
           {/* Troubleshooting */}
-          <div className="bg-white rounded-lg shadow-md p-8 mb-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">Troubleshooting</h2>
+          <div className="bg-white rounded-lg shadow-md p-8 mb-8 border border-green-100">
+            <h2 className="text-2xl font-semibold text-green-900 mb-4">Troubleshooting</h2>
             
             <div className="space-y-4">
               <div>
-                <h4 className="font-medium text-gray-900 mb-2">Rate Limiting</h4>
-                <p className="text-gray-600 text-sm">
+                <h4 className="font-medium text-green-900 mb-2">Rate Limiting</h4>
+                <p className="text-green-700 text-sm">
                   GitHub API has rate limits. The script includes delays between requests. 
                   If you hit limits, increase the sleep intervals.
                 </p>
               </div>
               
               <div>
-                <h4 className="font-medium text-gray-900 mb-2">Authentication Errors</h4>
-                <p className="text-gray-600 text-sm">
+                <h4 className="font-medium text-green-900 mb-2">Authentication Errors</h4>
+                <p className="text-green-700 text-sm">
                   Ensure your GitHub token has the correct permissions and hasn't expired. 
                   Check that your OpenAI API key is valid and has sufficient credits.
                 </p>
               </div>
               
               <div>
-                <h4 className="font-medium text-gray-900 mb-2">OpenHands Integration</h4>
-                <p className="text-gray-600 text-sm">
+                <h4 className="font-medium text-green-900 mb-2">OpenHands Integration</h4>
+                <p className="text-green-700 text-sm">
                   The script template shows the integration pattern. You'll need to adapt it 
                   based on the specific OpenHands API or CLI interface you're using.
                 </p>

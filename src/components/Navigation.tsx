@@ -11,8 +11,6 @@ export default function Navigation() {
   const navItems = [
     { href: "/", label: "Home" },
     { href: "/setup", label: "Setup Guide" },
-    { href: "/about", label: "About" },
-    { href: "/contact", label: "Contact" },
     { href: "/thanks", label: "Thanks" },
   ];
 
@@ -21,11 +19,11 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="bg-white shadow-sm border-b">
+    <nav className="bg-green-50 shadow-sm border-b border-green-100">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="text-xl font-bold text-gray-900">
+          <Link href="/" className="text-xl font-bold text-green-800">
             OpenHands Agent
           </Link>
 
@@ -37,8 +35,8 @@ export default function Navigation() {
                 href={item.href}
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                   isActive(item.href)
-                    ? "text-blue-600 bg-blue-50"
-                    : "text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+                    ? "text-green-700 bg-green-100"
+                    : "text-green-600 hover:text-green-700 hover:bg-green-100"
                 }`}
               >
                 {item.label}
@@ -50,7 +48,7 @@ export default function Navigation() {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-700 hover:text-blue-600 focus:outline-none focus:text-blue-600"
+              className="text-green-600 hover:text-green-700 focus:outline-none focus:text-green-700"
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 {isMenuOpen ? (
@@ -66,15 +64,15 @@ export default function Navigation() {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-green-100">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
                   className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
                     isActive(item.href)
-                      ? "text-blue-600 bg-blue-50"
-                      : "text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+                      ? "text-green-700 bg-green-100"
+                      : "text-green-600 hover:text-green-700 hover:bg-green-100"
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
