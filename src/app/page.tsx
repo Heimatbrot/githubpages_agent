@@ -7,23 +7,42 @@ export default function Home() {
         {/* Hero Section */}
         <div className="text-center mb-16">
           <h1 className="text-5xl font-bold text-gray-900 mb-6">
-            Welcome to Next.js App
+            OpenHands GitHub Pages Agent
           </h1>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            A modern, fast, and scalable web application built with Next.js, React, and Tailwind CSS.
+          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+            This application was created entirely by <strong>OpenHands AI</strong> via{" "}
+            <a href="https://app.all-hands.dev" className="text-blue-600 hover:text-blue-800 underline">
+              app.all-hands.dev
+            </a>. 
+            All code, design, and functionality comes from the{" "}
+            <a 
+              href="https://github.com/Heimatbrot/githubpages_agent" 
+              className="text-blue-600 hover:text-blue-800 underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              githubpages_agent
+            </a>{" "}
+            repository, demonstrating the power of AI-driven development.
           </p>
-          <div className="flex gap-4 justify-center">
+          <div className="flex gap-4 justify-center flex-wrap">
+            <Link
+              href="/setup"
+              className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+            >
+              Setup Guide
+            </Link>
             <Link
               href="/about"
-              className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+              className="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50 transition-colors"
             >
               Learn More
             </Link>
             <Link
-              href="/contact"
-              className="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50 transition-colors"
+              href="/thanks"
+              className="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors"
             >
-              Get Started
+              Acknowledgments
             </Link>
           </div>
         </div>
@@ -36,9 +55,9 @@ export default function Home() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
             </div>
-            <h3 className="text-xl font-semibold mb-2">Fast Performance</h3>
+            <h3 className="text-xl font-semibold mb-2">AI-Generated Code</h3>
             <p className="text-gray-600">
-              Built with Next.js for optimal performance and SEO optimization.
+              Every line of code was written by OpenHands AI, showcasing autonomous development capabilities.
             </p>
           </div>
 
@@ -48,9 +67,9 @@ export default function Home() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
               </svg>
             </div>
-            <h3 className="text-xl font-semibold mb-2">Modern Design</h3>
+            <h3 className="text-xl font-semibold mb-2">Automated Workflow</h3>
             <p className="text-gray-600">
-              Beautiful, responsive design with Tailwind CSS for a great user experience.
+              Complete automation from GitHub issues to deployment, demonstrating end-to-end AI development.
             </p>
           </div>
 
@@ -60,9 +79,9 @@ export default function Home() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
-            <h3 className="text-xl font-semibold mb-2">Type Safe</h3>
+            <h3 className="text-xl font-semibold mb-2">Open Source</h3>
             <p className="text-gray-600">
-              Built with TypeScript for better development experience and fewer bugs.
+              Fully open source project demonstrating transparent AI development and collaboration.
             </p>
           </div>
         </div>
@@ -70,16 +89,16 @@ export default function Home() {
         {/* CTA Section */}
         <div className="bg-white rounded-lg shadow-md p-8 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Ready to get started?
+            Ready to automate your development?
           </h2>
           <p className="text-gray-600 mb-6">
-            Explore the features and start building your next great application.
+            Learn how to set up OpenHands to automatically handle GitHub issues, code, test, and deploy.
           </p>
           <Link
-            href="/docs"
+            href="/setup"
             className="bg-indigo-600 text-white px-8 py-3 rounded-lg hover:bg-indigo-700 transition-colors inline-block"
           >
-            View Documentation
+            Get Started with Setup
           </Link>
         </div>
       </main>

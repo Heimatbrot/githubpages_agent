@@ -10,8 +10,10 @@ export default function Navigation() {
 
   const navItems = [
     { href: "/", label: "Home" },
+    { href: "/setup", label: "Setup Guide" },
     { href: "/about", label: "About" },
     { href: "/contact", label: "Contact" },
+    { href: "/thanks", label: "Thanks" },
   ];
 
   const isActive = (href: string) => {
@@ -24,7 +26,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="text-xl font-bold text-gray-900">
-            Next.js App
+            OpenHands Agent
           </Link>
 
           {/* Desktop Navigation */}
